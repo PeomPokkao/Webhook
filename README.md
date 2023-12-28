@@ -1,3 +1,5 @@
+_G.P = true
+repeat wait(300)
 x = "https://discord.com/api/webhooks/1189784944512344074/ScClwE2IpUlwUOMyuqp09EEap3I9hlIeyOxXaFkZv0cJw5cnVKeEOF_mzicUd0v_rJNF"
 local HttpService = game:GetService("HttpService");
 game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true
@@ -324,3 +326,5 @@ function SendMessage(Webhook)
 end
 SendMessage(x)
 game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = false
+
+until _G.P == false
